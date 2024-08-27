@@ -11,9 +11,9 @@ random.shuffle(key)
 
 input_length = int(input("Enter the desired length of the password: "))
 
-if length > len(key):
+if input_length > len(key):
     print(f"The desired length exceeds the available characters.Random password is possible using this maximum length: {len(key)}")
-    length = len(key)
+    input_length = len(key)
 
 password = ''.join(key[:input_length])
 print(f"Generated Password: {password}")
